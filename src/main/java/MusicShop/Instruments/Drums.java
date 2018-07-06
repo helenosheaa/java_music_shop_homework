@@ -11,4 +11,9 @@ public class Drums extends Instrument {
     public int getSizeOfSet(){
         return this.sizeOfSet;
     }
+
+    @Override
+    public String makeNoise(String noise) {
+        return "Ra tat tat";
+    }
 }

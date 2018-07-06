@@ -12,4 +12,8 @@ public class Piano extends Instrument {
         return this.noOfKeys;
     }
 
+    @Override
+    public String makeNoise(String noise) {
+        return "Plink plonk";
+    }
 }

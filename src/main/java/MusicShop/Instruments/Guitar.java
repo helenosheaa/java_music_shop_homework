@@ -11,4 +11,9 @@ public class Guitar extends Instrument {
     public int getNoOfStrings(){
         return this.noOfStrings;
     }
+
+    @Override
+    public String makeNoise(String noise) {
+        return "Struuum";
+    }
 }

@@ -34,4 +34,8 @@ public class DrumsTest {
         assertEquals(5, drums.getSizeOfSet());
     }
 
+    @Test
+    public void canMakeNoise(){
+        assertEquals("Ra tat tat", drums.makeNoise("Ra tat tat"));
+    }
 }
