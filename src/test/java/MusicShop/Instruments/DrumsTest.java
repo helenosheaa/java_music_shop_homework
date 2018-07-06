@@ -11,7 +11,7 @@ public class DrumsTest {
 
     @Before
     public void before(){
-        drums = new Drums("Grey", "Metal", InstrumentType.PERCUSSION);
+        drums = new Drums("Grey", "Metal", InstrumentType.PERCUSSION, 5);
     }
 
     @Test
@@ -29,5 +29,9 @@ public class DrumsTest {
         assertEquals("Percussion", drums.getInstrumentType());
     }
 
+    @Test
+    public void canGetSizeOfSet(){
+        assertEquals(5, drums.getSizeOfSet());
+    }
 
 }

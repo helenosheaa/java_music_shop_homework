@@ -1,7 +1,14 @@
 package MusicShop.Instruments;
 
 public class Drums extends Instrument {
-    public Drums(String colour, String material, InstrumentType type) {
+    private int sizeOfSet;
+
+    public Drums(String colour, String material, InstrumentType type, int sizeOfSet) {
         super(colour, material, type);
+        this.sizeOfSet = sizeOfSet;
+    }
+
+    public int getSizeOfSet(){
+        return this.sizeOfSet;
     }
 }
