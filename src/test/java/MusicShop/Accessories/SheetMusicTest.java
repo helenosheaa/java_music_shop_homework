@@ -11,12 +11,17 @@ public class SheetMusicTest {
 
     @Before
     public void before() {
-        sheetMusic = new SheetMusic("Piano songs for Dummies", 5,10);
+        sheetMusic = new SheetMusic("Sheety Music","Piano songs for Dummies", 5,10);
     }
 
     @Test
     public void canGetDescription(){
         assertEquals("Piano songs for Dummies", sheetMusic.getDescription());
+    }
+
+    @Test
+    public void canGetName(){
+        assertEquals("Sheety Music", sheetMusic.getName());
     }
 
     @Test

@@ -1,6 +1,8 @@
 package MusicShop.Instruments;
 
-public class Drums extends Instrument {
+import MusicShop.Behaviours.ISell;
+
+public class Drums extends Instrument implements ISell {
     private int sizeOfSet;
 
     public Drums(String colour, String material, InstrumentType type, int sizeOfSet) {
@@ -15,5 +17,10 @@ public class Drums extends Instrument {
     @Override
     public String makeNoise(String noise) {
         return "Ra tat tat";
+    }
+
+    @Override
+    public int calculateMarkup(int boughtPrice, int SellingPrice) {
+        return 0;
     }
 }

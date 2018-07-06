@@ -1,5 +1,7 @@
 package MusicShop.Instruments;
 
+import MusicShop.Behaviours.ISell;
+
 public class Piano extends Instrument {
     private int noOfKeys;
 
@@ -16,4 +18,6 @@ public class Piano extends Instrument {
     public String makeNoise(String noise) {
         return "Plink plonk";
     }
+
+
 }
