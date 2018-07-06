@@ -2,7 +2,7 @@ package MusicShop.Instruments;
 
 import MusicShop.Behaviours.ISell;
 
-public class Piano extends Instrument {
+public class Piano extends Instrument implements ISell {
     private int noOfKeys;
 
     public Piano(String colour, String material, InstrumentType type, int noOfKeys){
@@ -20,4 +20,8 @@ public class Piano extends Instrument {
     }
 
 
+    @Override
+    public int calculateMarkup(int priceBought, int sellingPrice) {
+        return 0;
+    }
 }

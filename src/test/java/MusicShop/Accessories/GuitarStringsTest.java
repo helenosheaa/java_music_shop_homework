@@ -11,7 +11,7 @@ public class GuitarStringsTest {
 
     @Before
     public void before() {
-        guitarStrings = new GuitarStrings("Good Guitar", "Nick wound electric", 5, 10);
+        guitarStrings = new GuitarStrings("Good Guitar", "Nickel wound electric", 5, 10);
     }
 
     @Test

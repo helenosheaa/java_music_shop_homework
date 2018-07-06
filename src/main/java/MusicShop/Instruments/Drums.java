@@ -19,8 +19,9 @@ public class Drums extends Instrument implements ISell {
         return "Ra tat tat";
     }
 
+
     @Override
-    public int calculateMarkup(int boughtPrice, int SellingPrice) {
+    public int calculateMarkup(int priceBought, int sellingPrice) {
         return 0;
     }
 }

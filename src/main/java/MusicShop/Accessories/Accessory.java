@@ -1,6 +1,8 @@
 package MusicShop.Accessories;
 
-public abstract class Accessory {
+import MusicShop.Behaviours.ISell;
+
+public abstract class Accessory implements ISell {
     private String name;
     private String description;
     private int priceBought;

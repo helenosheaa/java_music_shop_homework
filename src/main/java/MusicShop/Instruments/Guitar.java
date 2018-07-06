@@ -19,8 +19,9 @@ public class Guitar extends Instrument implements ISell {
         return "Struuum";
     }
 
+
     @Override
-    public int calculateMarkup(int buyingPrice, int SellingPrice) {
+    public int calculateMarkup(int priceBought, int sellingPrice) {
         return 0;
     }
 }
