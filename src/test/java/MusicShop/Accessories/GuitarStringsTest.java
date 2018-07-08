@@ -11,7 +11,7 @@ public class GuitarStringsTest {
 
     @Before
     public void before() {
-        guitarStrings = new GuitarStrings("Good Guitar", "Nickel wound electric", 5, 10);
+        guitarStrings = new GuitarStrings("Good Guitar", "Nickel wound electric", 5.99, 10.99);
     }
 
     @Test
@@ -25,13 +25,13 @@ public class GuitarStringsTest {
     }
 
     @Test
-    public void canGetPriceBought(){
-        assertEquals(5, guitarStrings.getPriceBought());
+    public void canGetCostPrice(){
+        assertEquals(5.99, guitarStrings.getCostPrice(), 0.01);
     }
 
 
     @Test
     public void canGetSellPrice(){
-        assertEquals(10, guitarStrings.getSellPrice());
+        assertEquals(10.99, guitarStrings.getSellPrice(), 0.01);
     }
 }

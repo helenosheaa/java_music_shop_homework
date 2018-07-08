@@ -11,7 +11,7 @@ public class DrumSticksTest {
 
     @Before
     public void before() {
-        drumSticks = new DrumSticks("Deez DrumSticks", "Wooden set of Two", 5, 10);
+        drumSticks = new DrumSticks("Deez DrumSticks", "Wooden set of Two", 5.99, 10.99);
     }
 
     @Test
@@ -27,12 +27,12 @@ public class DrumSticksTest {
 
     @Test
     public void canGetSellPrice() {
-        assertEquals(10, drumSticks.getSellPrice());
+        assertEquals(10.99, drumSticks.getSellPrice(), 0.01);
     }
 
 
     @Test
-    public void canGetPriceBought() {
-        assertEquals(5, drumSticks.getPriceBought());
+    public void canGetCostPrice() {
+        assertEquals(5.99, drumSticks.getCostPrice(), 0.01);
     }
 }

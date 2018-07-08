@@ -4,14 +4,26 @@ import MusicShop.Behaviours.ISell;
 
 public class Drums extends Instrument implements ISell {
     private int sizeOfSet;
+    private double costPrice;
+    private double sellPrice;
 
-    public Drums(String colour, String material, InstrumentType type, int sizeOfSet) {
+    public Drums(String colour, String material, InstrumentType type, int sizeOfSet, double costPrice, double sellPrice) {
         super(colour, material, type);
         this.sizeOfSet = sizeOfSet;
+        this.costPrice = costPrice;
+        this.sellPrice = sellPrice;
     }
 
     public int getSizeOfSet(){
         return this.sizeOfSet;
+    }
+
+    public double getSellPrice() {
+        return this.sellPrice;
+    }
+
+    public double getCostPrice() {
+        return this.costPrice;
     }
 
     @Override
@@ -19,9 +31,9 @@ public class Drums extends Instrument implements ISell {
         return "Ra tat tat";
     }
 
-
     @Override
-    public int calculateMarkup(int priceBought, int sellingPrice) {
-        return 0;
+    public double calculateMarkUp() {
+        double markUp = sellPrice - costPrice;
+        return markUp;
     }
 }

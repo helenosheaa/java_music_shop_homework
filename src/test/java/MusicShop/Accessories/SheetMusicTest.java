@@ -11,7 +11,7 @@ public class SheetMusicTest {
 
     @Before
     public void before() {
-        sheetMusic = new SheetMusic("Sheety Music","Piano songs for Dummies", 5,10);
+        sheetMusic = new SheetMusic("Sheety Music","Piano songs for Dummies", 5.99,10.99);
     }
 
     @Test
@@ -25,13 +25,13 @@ public class SheetMusicTest {
     }
 
     @Test
-    public void canGetPriceBought(){
-        assertEquals(5, sheetMusic.getPriceBought());
+    public void canGetCostPrice(){
+        assertEquals(5.99, sheetMusic.getCostPrice(), 0.01);
     }
 
 
     @Test
     public void canGetSellPrice(){
-        assertEquals(10, sheetMusic.getSellPrice());
+        assertEquals(10.99, sheetMusic.getSellPrice(), 0.01);
     }
 }
